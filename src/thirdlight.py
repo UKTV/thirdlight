@@ -33,7 +33,7 @@ import json
 import os
 import re
 import requests
-import urllib
+from urllib.parse import urljoin
 
 import logging
 logger = logging.getLogger()
@@ -113,7 +113,7 @@ class ThirdLight(object):
         `http://<ACCOUNT>.thirdlight.com`. `api_key` is mandatory.
         """
 
-        self.api_url = urllib.basejoin(thirdlight_url, ThirdLight.API_ENDPOINT)
+        self.api_url = urljoin(thirdlight_url, ThirdLight.API_ENDPOINT)
         self.api_key = api_key
         self.api_user = api_user
         self.session_key = None
