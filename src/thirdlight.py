@@ -282,7 +282,7 @@ class ThirdLight(object):
         fileData = {
             "encoding": "base64",
             "name": os.path.split(source)[1],
-            "data": b64,
+            "data": b64.decode("utf-8"),
             "metadata": {'caption': caption, 'keywords': keywords},
         }
         # Any additional file metadata to include in the upload
