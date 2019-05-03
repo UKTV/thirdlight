@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name = "thirdlight",
-    version = "0.3.2",
+    version = "0.3.3",
     author = "ReThought Ltd",
     author_email = "code@rethought-solutions.com",
     url = "https://github.com/Rethought/thirdlight.git",
